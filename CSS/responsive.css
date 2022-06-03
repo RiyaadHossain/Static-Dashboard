@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .dashboard-nav-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main-logo {
+    bottom: 540px;
+    left: 168px;
+  }
+  .side-bar {
+    display: none;
+  }
+  .responsive-toggle {
+    display: block;
+    width: 8%;
+    background-color: beige;
+    position: relative;
+  }
+  .toggle-icon{
+      position: absolute;
+      font-size: 20px;
+      bottom: 10px;
+      right: -8px;
+  }
+  .side-bar-content {
+    width: 92%;
+  }
+  .after-clicked{
+      display: block;
+      width: 60%;
+  }
+}
