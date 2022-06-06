@@ -24,22 +24,22 @@ body {
   font-size: 40px;
   color: cornflowerblue;
 }
-.user-img{
-    position: relative;
+.user-img {
+  position: relative;
 }
 .user-img img {
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
-.active-status{
-    height: 10px;
-    width: 10px;
-    background-color: rgb(18, 227, 25);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 5px;
-    right: 8px;
+.active-status {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(18, 227, 25);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
 }
 
 /* ------------------------- Dashboard ------------------------- */
@@ -63,13 +63,41 @@ body {
   color: white;
   margin-top: 12px;
 }
+.figure {
+  position: relative;
+}
+.icon {
+  width: 50px;
+  background-color: rgb(8, 78, 136);
+  padding: 5px;
+  height: 50px;
+  border-radius: 50%;
+}
+.icon-hover {
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  transition: all ease-in-out 0.8s;
+}
+.figure:hover .icon-hover {
+  padding: 5px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 1;
+  display: inline;
+}
+.figure:hover .icon{
+  display: none;
+}
 .dashboard-icon {
   background-color: rgb(8, 78, 136);
   padding: 15px;
   font-size: 20px;
   color: rgb(255, 255, 255);
   border-radius: 50%;
-  transition: all ease-in-out .5s;
 }
 .dashboard-icon:hover {
   background-color: rgb(255, 255, 255);
@@ -106,57 +134,57 @@ body {
   float: left;
 }
 .side-bar-content {
-    width: 85%;
-    background-color: rgb(203, 236, 250);
-    padding: 35px;
+  width: 85%;
+  background-color: rgb(203, 236, 250);
+  padding: 35px;
 }
-.responsive-toggle{
+.responsive-toggle {
   display: none;
 }
-.side-bar-nav{
-    margin-bottom: 10px;
-    padding: 8px 5px;
+.side-bar-nav {
+  margin-bottom: 10px;
+  padding: 8px 5px;
 }
-.side-bar-active{
-    background-color: cornflowerblue;
-    margin-bottom: 10px;
-    padding: 8px 5px;
+.side-bar-active {
+  background-color: cornflowerblue;
+  margin-bottom: 10px;
+  padding: 8px 5px;
 }
-.log-out{
-    position: absolute;
-    bottom: 10px;
-    left: 70px;
-    display: flex;
-    align-items: center;
+.log-out {
+  position: absolute;
+  bottom: 10px;
+  left: 70px;
+  display: flex;
+  align-items: center;
 }
-.log-out-icon{
-    font-size: 20px;
+.log-out-icon {
+  font-size: 20px;
 }
-.side-bar-content-body{
-    padding: 10px;
-    background-color: skyblue;
-    height: 50vh;
+.side-bar-content-body {
+  padding: 10px;
+  background-color: skyblue;
+  height: 50vh;
 }
-.side-bar-content h3{
-    font-size: 25px;
+.side-bar-content h3 {
+  font-size: 25px;
 }
 
-.side-bar-content p{
-    font-weight: 400;
-    color: rgb(65, 63, 63);
+.side-bar-content p {
+  font-weight: 400;
+  color: rgb(65, 63, 63);
 }
 
 /* ------------------------- Footer Section ------------------------- */
-footer{
-    background-color: rgb(5, 33, 62);
-    text-align: center;
-    padding: 12px 0;
+footer {
+  background-color: rgb(5, 33, 62);
+  text-align: center;
+  padding: 12px 0;
 }
-.footer-text{
-    color: rgb(173, 171, 171);
+.footer-text {
+  color: rgb(173, 171, 171);
 }
-.footer-icon{
-    color: white;
-    font-size: 20px;
-    margin-right: 5px;
+.footer-icon {
+  color: white;
+  font-size: 20px;
+  margin-right: 5px;
 }
